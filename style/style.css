@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: #00a2c6;
+}
+
+/* Navigasi dengan Dropdown */
+nav {
+  background-color: #00a2c6;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+}
+
+.nav-left {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  list-style-type: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+/* Sub-dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #00a2c6;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropbtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Jumbotron */
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron h1 {
+  color: white;
+}
+
+/* Konten utama */
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+#content {
+  flex: 5;
+}
+
+aside {
+  flex: 2;
+}
+
+/* Gambar fitur */
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Profile */
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Responsif */
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dropdown {
+    position: static;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    justify-content: center;
+    padding-inline: 1rem;
+  }
+}
+
+/* Dark Mode */
+/* Style default (mode terang) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Mode gelap */
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* Mode terang */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Sidebar */
+body.dark-mode .sidebar {
+  background-color: #333; /* Latar belakang sidebar gelap */
+  color: #ddd; /* Teks sidebar terang */
+}
+
+body.light-mode .sidebar {
+  background-color: #fff; /* Latar belakang sidebar terang */
+  color: #000; /* Teks sidebar gelap */
+}
+
+body.dark-mode .sidebar h2,
+body.dark-mode .sidebar p,
+body.dark-mode .sidebar ul {
+  color: #ddd; /* Teks terang di sidebar */
+}
+
+body.light-mode .sidebar h2,
+body.light-mode .sidebar p,
+body.light-mode .sidebar ul {
+  color: #000; /* Teks gelap di sidebar */
+}
+
+/* Sidebar List Items */
+body.dark-mode .sidebar li,
+body.light-mode .sidebar li {
+  color: #ddd; /* Teks dalam list sidebar akan memiliki warna terang */
+}
+
+/* Sidebar Info */
+body.dark-mode .sidebar-info {
+  color: #ddd; /* Pastikan teks lainnya di sidebar tetap terang */
+}
+
+body.light-mode .sidebar-info {
+  color: #000; /* Teks gelap di sidebar mode terang */
+}
+
+/* Sidebar Links */
+.sidebar a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Mode toggle button */
+.dark-setting {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dark-wrapper:hover .dark-setting {
+  display: block;
+}
+
+.dark-link {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-link:hover {
+  background-color: #0056b3;
+}

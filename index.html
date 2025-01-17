@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Bangka Belitung</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Bangka Belitung</h1>
+        <p>Provinsi Kepulauan yang Mempesona</p>
+      </div>
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Profil</a>
+              <div class="dropdown-content">
+                <a href="#sejarah">Sejarah</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Informasi</a>
+              <div class="dropdown-content">
+                <a href="#logo-bangkabelitung">Logo Bangka Belitung</a>
+                <a href="#geografis">Geografis</a>
+                <a href="#wisata">Wisata</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li>
+              <button id="darkmode-toggle" onclick="toggleDarkMode()">
+                <span id="mode-icon" aria-hidden="true"></span> Mode Gelap
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+  
+
+    <main>
+      <div id="content">
+        <article id="sejarah" class="card">
+          <h2>Sejarah</h2>
+          <img
+            src="image/histori-babel.png"
+            alt="Sejarah Bangka Belitung"
+            class="featured-image"
+          />
+          <p>
+            Bangka Belitung memiliki sejarah yang panjang, dimulai dari
+            kerajaan-kerajaan lokal dan keterlibatan dalam perdagangan maritim.
+            Pada abad ke-18, wilayah ini dikuasai oleh Kesultanan Palembang
+            sebelum Belanda mengambil alih untuk menguasai tambang timah yang
+            kaya di Bangka.
+          </p>
+          <p>
+            Setelah Indonesia merdeka, Bangka Belitung bergabung dengan Sumatera
+            Selatan, tetapi pada tahun 2000, wilayah ini resmi menjadi provinsi
+            sendiri.
+          </p>
+        </article>
+
+        <article id="geografis" class="card">
+          <h2>Geografis</h2>
+          <img
+            src="image/geografis-babel.png"
+            alt="Geografis Bangka Belitung"
+            class="featured-image"
+          />
+          <p>
+            Bangka Belitung, di timur Sumatera, terdiri dari Pulau Bangka dan
+            Belitung serta pulau kecil lainnya. Dikelilingi Laut Cina Selatan
+            dan Selat Karimata, wilayahnya dikenal dengan pantai pasir putih,
+            batu granit, tambang timah, serta iklim tropis.
+          </p>
+        </article>
+
+        <article id="wisata" class="card">
+          <h2>Wisata</h2>
+          <p>
+            Bangka Belitung terkenal dengan wisata alamnya, terutama pantai
+            berpasir putih dan batu granit besar seperti di Pantai Tanjung
+            Tinggi dan Pantai Parai Tenggiri.
+          </p>
+
+          <section>
+            <h3>Museum Timah Indonesia</h3>
+            <img
+              src="image/musem-timah.png"
+              alt="Museum Timah Indonesia"
+              class="featured-image"
+            />
+            <p>
+              Museum Timah Indonesia di Pangkalpinang adalah museum khusus yang
+              menampilkan sejarah dan perkembangan industri timah di Bangka
+              Belitung.
+            </p>
+          </section>
+
+          <section>
+            <h3>Mercusuar Bangka Belitung</h3>
+            <img
+              src="image/mercusuar-babel.png"
+              alt="Mercusuar Bangka Belitung"
+              class="featured-image"
+            />
+            <p>
+              Mercusuar di Bangka Belitung yang paling terkenal adalah Mercusuar
+              Pulau Lengkuas, terletak di lepas pantai Belitung. Dibangun pada
+              tahun 1882 oleh pemerintah kolonial Belanda.
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Bangka Belitung</h2>
+            <p>Kota Serumpun Sebalai</p>
+            <figure id="logo-bangkabelitung"></figure>
+            <figure>
+              <img
+                src="image/logo_bangkabelitung.png"
+                alt="Lambang Bangka Belitung"
+              />
+              <figcaption>Lambang Provinsi Bangka Belitung</figcaption>
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi Lainnya</h3>
+            <table>
+              <tr>
+                <th>Negara</th>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <th>Ibu Kota</th>
+                <td>Kota Pangkalpinang</td>
+              </tr>
+              <tr>
+                <th>Hari jadi</th>
+                <td>21 November 2000</td>
+              </tr>
+              <tr>
+                <th>Luas Total</th>
+                <td>16.424,14 km<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th>Bahasa Daerah</th>
+                <td>Melayu Bangka & Belitung, Hakka, Hokkian</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Submission Belajar Dasar Pemrograman Web &#169; 2025, By Riduan - Coding Camp 2025.
+      </p>
+    </footer>
+
+    <script src="js/darkmode.js"></script>
+  </body>
+</html>
